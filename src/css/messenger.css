@@ -1,0 +1,98 @@
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.messages-open-container{
+    position: absolute;
+    border: 0.75px solid #707070;
+    height: 100%;
+    width: 22.5%;
+    overflow-y: scroll;
+    overflow-x: none;
+    min-width: 200px;
+}
+
+.messages-open-else-container{
+    position: absolute;
+    height: 100%;
+    width: 77.5%;
+    right: 0;
+    z-index: -1000000;
+    display: grid;
+    display: -ms-grid;
+	place-items: center;
+}
+
+.messenger-container{
+    border: 0.75px solid #707070;
+    width: 80%;
+    border-radius: 30px 10px 30px 10px;
+    margin: 0px;
+}
+
+.messenger-header{
+    border-bottom: 0.75px solid #707070;
+    line-height: 60px;
+    padding-left: 30px;
+    width: 90%;
+    top: 0px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.messages-body{
+    width: 100%;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.msg-container{
+    width: 100%;
+    min-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.message{
+    min-height: 50px;
+    width: fit-content;
+    max-width: 275px;
+    background-color: transparent;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #707070;
+    border-radius: 3px;
+}
+
+.from-me>.message{
+    margin-left: auto; 
+    margin-right: 15px;
+}
+
+.from-other>.message{
+    margin: 10px;
+}
+
+.send-form{
+    margin: 20px;
+}
+
+.send-msg-container{
+    display: flex;
+}
+
+.input-msg{
+    border: 1px solid #707070;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 10px 0px 0px 10px;
+    width: 92%;
+    outline: none;
+    padding-left: 20px;
+}
+
+.send-btn{
+    border: 1px solid #707070;
+    border-radius: 0px 10px 10px 0px;
+}
